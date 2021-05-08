@@ -1,6 +1,4 @@
 @import url(nreset.css);
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @media (max-width: 850px) {
   #nav-bar-bottom {
     display: flex;
@@ -15,13 +13,21 @@
     order: -1;
   }
 }
-@media (max-width: 500px) {
-  #nav-bar-top {
-    display: none;
+@media (max-width: 450px) {
+  #nav-left {
+    display: none !important;
   }
-  #nav-left,
-  #nav-right {
-    display: none;
+  #sign-in {
+    white-space: nowrap;
+  }
+  #nav-bar-top a {
+    margin-top: 0;
+  }
+  #nav-bar-bottom {
+    white-space: nowrap;
+  }
+  a {
+    padding: 0 !important;
   }
 }
 body {
@@ -107,6 +113,9 @@ form {
   padding: 0.4em;
   margin: 0.12em;
   margin-bottom: 1.4em;
+}
+#search-container:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 28%);
 }
 #search-bar-container {
   width: 100%;
