@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Document</title>
   </head>
+
   <body>
     <div id="page-container">
       <header>
@@ -22,7 +23,7 @@
           <div id="nav-right">
             <a href="">Gmail</a>
             <a href="">Images</a>
-            <a href="" id="apps"><span class="material-icons">apps</span></a>
+            <a href=""><span class="material-icons" id="apps">apps</span></a>
             <a href="" id="sign-in">Sign in</a>
           </div>
         </nav>
@@ -35,20 +36,26 @@
             id="google-logo"
           />
         </div>
-        <div id="search-container">
+        <div>
           <form action="" id="search-form">
-            <div id="search-bar-container">
-              <span class="material-icons"> search </span>
-              <label for="search-bar" class="search">
-                <input type="search" name="" id="search-bar" />
-              </label>
-              <span id="mic-container"
-                ><a href=""
-                  ><img
-                    id="mic-logo"
-                    src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
-                    alt="google's mic logo" /></a
-              ></span>
+            <div id="search-container">
+              <div id="search-icon">
+                <span class="material-icons"> search </span>
+              </div>
+              <div id="search-bar-container">
+                <label for="search-bar" class="search">
+                  <input type="search" name="" id="search-bar" />
+                </label>
+              </div>
+              <div id="mic-icon">
+                <span>
+                  <a href=""
+                    ><img
+                      id="mic-logo"
+                      src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+                      alt="google's mic logo" /></a
+                ></span>
+              </div>
             </div>
             <div>
               <label for="search-button" class="search">
