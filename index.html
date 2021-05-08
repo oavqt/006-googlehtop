@@ -28,7 +28,6 @@
         </nav>
       </header>
       <main>
-        <div id="top-space"></div>
         <div id="google-logo-container">
           <img
             src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
@@ -38,16 +37,19 @@
         </div>
         <div id="search-container">
           <form action="" id="search-form">
-            <label for="search-bar" class="search" id="search-bar-container">
+            <div id="search-bar-container">
               <span class="material-icons"> search </span>
-              <input type="search" name="" id="search-bar" />
-              <a href=""
-                ><img
-                  id="mic-logo"
-                  src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
-                  alt="google's mic logo"
-              /></a>
-            </label>
+              <label for="search-bar" class="search">
+                <input type="search" name="" id="search-bar" />
+              </label>
+              <span id="mic-container"
+                ><a href=""
+                  ><img
+                    id="mic-logo"
+                    src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+                    alt="google's mic logo" /></a
+              ></span>
+            </div>
             <div>
               <label for="search-button" class="search">
                 <input
