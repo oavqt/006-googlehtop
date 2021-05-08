@@ -8,67 +8,91 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div id="nav-left">
-          <a href="">About</a>
-          <a href="">Store</a>
-        </div>
-        <div id="nav-right">
-          <a href="">Gmail</a>
-          <a href="">Images</a>
-          <a href="" id="apps"><span class="material-icons">apps</span></a>
-          <a href="" id="sign-in">Sign in</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <img
-        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="Google's logo"
-        id="google-logo"
-      />
-      <form action="" id="search-form">
-        <label for="search-bar" class="search">
-          <input type="search" name="" id="search-bar" />
-        </label>
-        <label for="search-button" class="search">
-          <input
-            type="button"
-            name=""
-            id="search-button"
-            value="Google Search"
+    <div id="page-container">
+      <header>
+        <nav id="nav-bar-top">
+          <div id="nav-left">
+            <a href="">About</a>
+            <a href="">Store</a>
+          </div>
+          <div id="nav-right">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <a href="" id="apps"><span class="material-icons">apps</span></a>
+            <a href="" id="sign-in">Sign in</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id="top-space"></div>
+        <div id="google-logo-container">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google's logo"
+            id="google-logo"
           />
-        </label>
-        <label for="search-random-button" class="search">
-          <input
-            type="button"
-            name=""
-            id="search-random-button"
-            value="I'm Feeling Lucky"
-          />
-        </label>
-      </form>
-    </main>
-    <footer>
-      <div id="footer-left">
-        <a href="">Advertising</a>
-        <a href="">Business</a>
-        <a href="">How Search works</a>
-      </div>
-      <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
-        alt="leaf icon"
-      />
-      <span>Carbon neutral since 2007</span>
-      <div id="footer-right">
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Settings</a>
-      </div>
-    </footer>
+        </div>
+        <div id="search-container">
+          <form action="" id="search-form">
+            <label for="search-bar" class="search" id="search-bar-container">
+              <span class="material-icons"> search </span>
+              <input type="search" name="" id="search-bar" />
+              <a href=""
+                ><img
+                  id="mic-logo"
+                  src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+                  alt="google's mic logo"
+              /></a>
+            </label>
+            <div>
+              <label for="search-button" class="search">
+                <input
+                  type="button"
+                  name=""
+                  id="search-button"
+                  value="Google Search"
+                />
+              </label>
+              <label for="search-random-button" class="search">
+                <input
+                  type="button"
+                  name=""
+                  id="search-random-button"
+                  value="I'm Feeling Lucky"
+                />
+              </label>
+            </div>
+          </form>
+        </div>
+      </main>
+      <div id="bottom-space"></div>
+      <footer>
+        <nav id="nav-bar-bottom">
+          <div id="footer-left">
+            <a href="">Advertising</a>
+            <a href="">Business</a>
+            <a href="">How Search works</a>
+          </div>
+          <div id="footer-text">
+            <a href=""
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
+                alt="google's leaf icon"
+                id="leaf-logo"
+              />Carbon neutral since 2007</a
+            >
+          </div>
+          <div id="footer-right">
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+          </div>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>

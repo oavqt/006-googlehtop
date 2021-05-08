@@ -1,0 +1,32 @@
+@import url(../../../resetcss/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  display: block;
+  text-decoration: none;
+  font-size: .9rem;
+  font-family: 'Roboto', sans-serif;
+  padding: .5em;
+}
+#page-container {
+    display: flex;
+    flex-direction: column;
+}
+#nav-bar-top {
+    display: flex;
+    justify-content: space-between;
+}
+#nav-left, #nav-right {
+    display: flex;
+}
+#top-space {
+    width: 100%;
+    height: 15vh;
+}
+#bottom-space {
+    width: 100%;
+    height: 15vh;
+}
